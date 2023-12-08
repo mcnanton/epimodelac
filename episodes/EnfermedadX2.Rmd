@@ -1,5 +1,5 @@
 ---
-title: "Taller Día 4 - Grupo 1 - Estimación de las distribuciones de rezagos epidemiológicos: Enfermedad X"
+title: "Taller Día 4 - Grupo 2 - Estimación de las distribuciones de rezagos epidemiológicos: Enfermedad X"
 author: "Kelly Charniga, PhD MPH & Zulma Cucunubá MD, PhD"
 date: "2023-11-23"
 output: html_document
@@ -285,7 +285,7 @@ En esta practica se usarán los siguientes paquetes de `R`:
 
 -   `rstan` para estimar el período de incubación
 
--   `coarseDataTools` via `EpiEstim` para estimar el intervalo serial
+-   `coarseDataTools` vía `EpiEstim` para estimar el intervalo serial
 
 Instrucciones de instalación para los paquetes: 
 
@@ -332,9 +332,9 @@ Hay dos elementos de interés:
 -   `contacts`,  un archivo con datos de rastreo de contactos que contiene información sobre pares de casos primarios y secundarios.
 
 ```{r load dat, echo=TRUE}
-# Grupo 1
-dat <- readRDS("data/practical_data_group1.RDS") 
-linelist <- dat$linelist 
+# Grupo 2
+dat <- readRDS("data/practical_data_group2.RDS")
+linelist <- dat$linelist
 contacts <- dat$contacts
 
 ```
@@ -1335,5 +1335,3 @@ Kelly Charniga, Zachary Madewell, Zulma M. Cucunubá
 6.  Lambert B. A Student's Guide to Bayesian Statistics. Los Angeles, London, New Delhi, Singapore, Washington DC, Melbourne: SAGE, 2018.
 7.  Vehtari A et al. Rank-normalization, folding, and localization: An improved R-hat for assessing convergence of MCMC. Bayesian Analysis 2021: Advance publication 1-28. <https://doi.org/10.1214/20-BA1221>
 8.  Nishiura H et al. Serial interval of novel coronavirus (COVID-19) infections. Int J Infect Dis. 2020;93:284-286. <https://doi.org/10.1016/j.ijid.2020.02.060>
-
-
